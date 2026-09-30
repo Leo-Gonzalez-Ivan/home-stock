@@ -16,6 +16,7 @@ export const deleteProduct = (id) => api.delete(`/products/${id}`);
 export const consumeProduct = (id, data) => api.patch(`/products/${id}/consume`, data);
 export const getLowStock = () => api.get('/products/low-stock');
 export const getUnitTypes = () => api.get('/products/unit-types');
+export const lookupBarcode = (barcode) => api.get(`/barcode/${barcode}`);
 
 // Categories
 export const getCategories = () => api.get('/categories');
